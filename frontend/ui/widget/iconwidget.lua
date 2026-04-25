@@ -49,9 +49,10 @@ local IconWidget = ImageWidget:extend{
     width = Screen:scaleBySize(DGENERIC_ICON_SIZE), -- our icons are square
     height = Screen:scaleBySize(DGENERIC_ICON_SIZE),
     is_icon = true, -- avoid dithering in ImageWidget:paintTo()
-    alpha = false, --- @note: Our icons have a transparent background, but, by default, we flatten them at caching time.
-                   ---        Our caller may choose to override that by setting this to true, in which case,
-                   ---        the alpha layer will be kept intact, and we'll do alpha-blending at blitting time.
+    --- @note: Our icons have a transparent background, but, by default, we flatten them at caching time.
+    ---        Our caller may choose to override that by setting this to true, in which case,
+    ---        the alpha layer will be kept intact, and we'll do alpha-blending at blitting time.
+    alpha = false
 }
 
 function IconWidget:init()
