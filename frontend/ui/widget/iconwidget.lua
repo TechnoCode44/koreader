@@ -1,4 +1,4 @@
---- A subclass of ImageWidget to show icons so it's fields can be used here
+--- A subclass of ImageWidget to show icons, so its fields can be used here
 -- @usage local IconWidget = require("ui/widget/iconwidget")
 -- local icon_widget = IconWidget:new{
 --     icon = "check", -- Which corresponds to resources/icons/mdlight/check.svg
